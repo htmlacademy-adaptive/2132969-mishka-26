@@ -191,6 +191,8 @@
   .main-nav__link {
     justify-content: flex-start;
     min-height: 88px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 1150px) {
@@ -273,7 +275,8 @@
 }
 @media (min-width: 768px) {
   .main-nav__logo {
-    width: max-content;
+    box-shadow: none;
+    height: 100%;
   }
 }
 @media (min-width: 1150px) {
@@ -327,7 +330,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 1px;
-    max-width: 400px;
+    max-width: 50%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -339,6 +342,7 @@
     position: static;
     transform: none;
     grid-column-gap: 0;
+    max-width: 40%;
   }
 }
 
@@ -419,6 +423,7 @@
 @media (min-width: 1150px) {
   .user-list {
     order: 3;
+    max-width: 40%;
   }
 }
 
@@ -577,7 +582,7 @@
 }
 
 .header-container__hero {
-  height: 283px;
+  min-height: 283px;
   background-image: url("../img/hero-mobile@2x 1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -586,7 +591,7 @@
 }
 @media (min-width: 768px) {
   .header-container__hero {
-    height: 626px;
+    min-height: 626px;
     background-size: cover;
   }
 }
@@ -1123,7 +1128,7 @@
     font-size: 43px;
     line-height: 50px;
     display: flex;
-    width: 300px;
+    width: 480px;
     margin: 0;
     order: 1;
     margin-top: 83px;
@@ -1135,6 +1140,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 36px;
+    width: 680px;
   }
 }
 
@@ -1282,7 +1288,7 @@
   .reviews__leave-feedback-button {
     order: 2;
     width: 175px;
-    height: 50px;
+    min-height: 50px;
     margin-top: auto;
     margin-bottom: 40px;
   }
@@ -1845,6 +1851,10 @@
     position: absolute;
     width: auto;
     transform: translateX(-113px);
+    max-width: 113px;
+    max-height: 65px;
+    overflow-wrap: anywhere;
+    overflow: hidden;
   }
 }
 
@@ -2411,6 +2421,7 @@
     font-size: 17px;
     line-height: 30px;
     padding: 0 50px;
+    margin: 0 auto;
     margin-top: 0;
     margin-bottom: 13px;
   }
@@ -2419,7 +2430,6 @@
   .form-container__description {
     padding: 0;
     margin-bottom: 14px;
-    padding-left: 225px;
     width: 702px;
   }
 }
